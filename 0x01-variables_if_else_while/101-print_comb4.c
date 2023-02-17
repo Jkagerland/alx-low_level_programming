@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 /**
@@ -20,10 +21,10 @@ if (i != f && f != g && i != g)
 putchar(i + '0');
 putchar(f + '0');
 putchar(g + '0');
-putchar(',');
 if (i < 7)
 {
-putchar('\n');
+putchar(',');
+putchar(' ');
 }
 }
 
