@@ -21,7 +21,10 @@ putchar(i + '0');
 putchar(f + '0');
 putchar(g + '0');
 putchar(',');
-
+if (i < 7)
+{
+putchar('\n');
+}
 }
 
 }
