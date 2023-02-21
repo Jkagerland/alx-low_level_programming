@@ -12,7 +12,7 @@ int main(void)
 	long int last_num = 2;
 	long int before_last = 1;
 
-	for(i = 0; i < 49; i++)
+	for (i = 0; i < 49; i++)
 	{
 	if (i == 0)
 	printf("%ld, %ld", before_last, last_num);
