@@ -9,6 +9,7 @@ int main(void)
 {
 	int i = 0;
 	int sum = 0;
+
 	while (i < 1024)
 	{
 	sum += i;
@@ -17,11 +18,9 @@ int main(void)
 	i = 0;
 	while (i < 1024)
 	{
-	if (i % 3 == 0){
-	}
-	else {
+	if (!(i % 3 == 0))
 	sum += i;
-	}
+
 	i = i + 5;
 	}
 	printf("%d\n", sum);
