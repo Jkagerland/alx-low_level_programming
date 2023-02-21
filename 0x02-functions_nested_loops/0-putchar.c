@@ -3,7 +3,8 @@
 * main - Entry to the program
 * Return: 0 (Succes)
 */
-int main(void){
+int main(void)
+{
 	_putchar('_');
 	_putchar('p');
 	_putchar('u');
