@@ -6,7 +6,7 @@
 * Return: 0
 */
 
-void print-triangle(int size)
+void print_triangle(int size)
 {
 
 	int x, y, z;
