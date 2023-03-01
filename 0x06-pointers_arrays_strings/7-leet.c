@@ -6,7 +6,7 @@
 * Return: the string
 */
 
-char *leet(char* str)
+char *leet(char *str)
 {
 	int index = 0;
 
@@ -25,5 +25,5 @@ char *leet(char* str)
 
 	index++;
 	}
-	return str;
+	return (str);
 }
