@@ -8,21 +8,17 @@
 
 char *leet(char *str)
 {
-	int index = 0;
+	int index = 0, index2;
+	char leet[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
 	while (str[index])
 	{
-	if (str[index] == 'a' || str[index] == 'A')
-	str[index] = '4';
-	if (str[index] == 'e' || str[index] == 'E')
-	str[index] = '3';
-	if (str[index] == 'o' || str[index] == 'O')
-	str[index] = '0';
-	if (str[index] == 't' || str[index] == 'T')
-	str[index] = '7';
-	if (str[index] == 'l' || str[index] == 'L')
-	str[index] = '1';
-
+	for (index2 = 0; index2 <= 9; index2++)
+	{
+	if (leet[index2] == str[index])
+	str[index] = b[index2];
+	}
 	index++;
 	}
 	return (str);
