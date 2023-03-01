@@ -3,6 +3,7 @@
 /**
 * _strncat - entry point
 * @dest: t
+* @n: t
 * @src: t
 * Return: 0
 */
