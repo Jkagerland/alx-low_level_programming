@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
 * free_grid - Entry
-* grid: t
-* height: t
+* @grid: t
+* @height: t
 * Return: 0
 */
 
