@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -41,10 +41,8 @@ char *create_xarray(int size)
 	array = malloc(sizeof(char) * size);
 
 	if (array == NULL)
-	{
-		printf("Error\n");
 		exit(98);
-	}
+
 	for (index = 0; index < (size - 1); index++)
 		array[index] = 'x';
 
@@ -82,6 +80,7 @@ int get_digit(char c)
 
 	if (digit < 0 || digit > 9)
 	{
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -123,7 +122,8 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 	{
 		if (*mult < '0' || *mult > '9')
 		{
-			return (0);
+			printf("Error\n");
+			exit(98);
 		}
 
 		num = (*mult - '0') * digit;
@@ -204,10 +204,8 @@ int main(int argc, char *argv[])
 		argv[2] = iterate_zeroes(argv[2]);
 	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
-	/*	printf("0\n");*/
-		printf("Error\n");
-	/*		return (0);*/
-		exit(98);
+		printf("0\n");
+		return (0);
 	}
 
 	size = find_len(argv[1]) + find_len(argv[2]);
